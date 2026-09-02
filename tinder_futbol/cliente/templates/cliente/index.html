@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tinder Fútbol</title>
+    <style>
+        /* Estilos Globales Premium */
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+        body { background-color: #e5e7eb; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+        
+        /* Contenedor estilo "App Móvil" Premium */
+        .app-container { background-color: #ffffff; width: 100%; max-width: 400px; min-height: 85vh; border-radius: 30px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); display: flex; flex-direction: column; overflow: hidden; position: relative; }
+        
+        /* Encabezado */
+        .header { padding: 60px 20px 30px; text-align: center; }
+        .icon { font-size: 3.5rem; margin-bottom: 10px; display: block; }
+        
+        /* Efecto de texto oscuro y elegante para el logo */
+        .logo-text { font-size: 2.2rem; font-weight: 900; color: #111827; letter-spacing: -1px; margin-bottom: 5px; }
+        .subtitle { color: #6b7280; font-size: 1rem; font-weight: 500; }
+
+        /* Contenido Central */
+        .content { flex-grow: 1; padding: 30px 25px; display: flex; flex-direction: column; justify-content: center; gap: 20px; }
+
+        /* Botones Profesionales */
+        .btn { display: block; width: 100%; padding: 18px; border-radius: 50px; text-align: center; text-decoration: none; font-weight: 700; font-size: 1.1rem; transition: all 0.3s ease; cursor: pointer; border: none; }
+        .btn:active { transform: scale(0.96); }
+        
+        /* Botón Principal (Verde Cancha) */
+        .btn-primary { background: linear-gradient(135deg, #047857, #10b981); color: white; box-shadow: 0 8px 20px rgba(16, 185, 129, 0.3); }
+        .btn-primary:hover { box-shadow: 0 10px 25px rgba(16, 185, 129, 0.4); }
+        
+        /* Botón Secundario (Oscuro Árbitro/Botín) */
+        .btn-secondary { background: #1f2937; color: #f9fafb; box-shadow: 0 4px 10px rgba(0,0,0,0.08); }
+        .btn-secondary:hover { background: #111827; }
+        
+        /* Separador Elegante */
+        .divider { text-align: center; color: #9ca3af; font-size: 0.85rem; font-weight: 700; text-transform: uppercase; display: flex; align-items: center; margin: 5px 0; }
+        .divider::before, .divider::after { content: ""; flex: 1; border-bottom: 1px solid #e5e7eb; margin: 0 15px; }
+    </style>
+</head>
+<body>
+
+    <div class="app-container">
+        <div class="header">
+            <span class="icon">⚽</span>
+            <h1 class="logo-text">Tinder Fútbol</h1>
+            <p class="subtitle">vamo a juga</p>
+        </div>
+
+        <div class="content">
+            <!-- Opción para buscar partido (Jugador) -->
+            <a href="#" class="btn btn-primary">Buscar Partido</a>
+            
+            <div class="divider">o</div>
+            
+            <!-- Opción para crear partido (Host) -->
+            <a href="/gestion/" class="btn btn-secondary">Armar Partido (Host)</a>
+        </div>
+    </div>
+
+</body>
+</html>
